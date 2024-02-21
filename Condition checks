@@ -1,0 +1,119 @@
+// Check if condition is true or false 
+
+let score = 99
+
+if score > 89 {
+    print("Awesome Score!")
+}
+
+let speed = 88
+let percentage = 85
+let age = 18
+
+if speed >= 88 {
+    print("We are going very fast!")
+}
+
+if percentage < 85 {
+    print("Sorry you recieved a B")
+}
+
+if age >= 18 {
+    print("You are eligible to vote")
+}
+
+
+let ourName = "Kevin Durant"
+let friendName = "Arnold Palmer"
+
+if ourName < friendName {
+    print("It's \(ourName) vs \(friendName)")
+}
+
+if ourName > friendName {
+print("It's \(friendName) vs \(ourName)")
+}
+
+var numbers = [1, 2, 3]
+numbers.append(4)
+
+if numbers.count > 3 {
+    numbers.remove(at:0)
+}
+
+print(numbers)
+
+// More examples of checking true or false statemenets 
+
+let country = "Dubai"
+
+if country == "Canada" {
+    print("G'Day")
+}
+
+let name = "Thomas Muller"
+
+if name != "Anonymous" {
+    print("Welcome, \(name)")
+}
+
+var username = "thomasmuller94"
+
+if username == "" {
+    username = "Anonymous"
+    }
+
+print("Welcome, \(username)")
+
+// How to check multiple conditions 
+
+let height = 72 
+
+if height >= 80 {
+    print("You are tall enough to ride.")
+} else { 
+    print("Sorry, you're too short for this ride.")
+}
+
+let temp = 75
+
+if temp > 70 {
+    if temp < 80 {
+        print("It's a perfect day!")
+    }
+}
+
+// Easier way to do the above multiple condition check using && 
+
+let testScore = 97
+
+if testScore  > 92 && testScore < 100 {
+print("Fantastic Score!")
+} 
+
+// using || which means "or" for the below multiple conditions check 
+
+let userAge = 14
+let hasParentalConsent = true 
+
+if age >= 18 || hasParentalConsent == true {
+    print("You can buy the game.")
+}
+
+// complex multiple conditions check using an enum
+
+enum TransportationOption {
+    case airplane, helicopter, bicycle, car, escooter
+}
+
+let transport = TransportationOption.airplane
+
+if transport == .airplane || transport == .helicopter {
+    print("Let's fly!")
+} else if transport == .bicycle {
+    print("I hope there's a bike path...")
+} else if transport == .car { 
+    print("Time to get stuck in traffic.")
+} else {
+    print("I'm going to hire a scooter now!")
+}
