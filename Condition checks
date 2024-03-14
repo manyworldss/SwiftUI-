@@ -117,3 +117,33 @@ if transport == .airplane || transport == .helicopter {
 } else {
     print("I'm going to hire a scooter now!")
 }
+
+
+// Fizzbuzz problem 
+
+
+for i in 1...100 {
+    if i.isMultiple(of: 3) && i.isMultiple(of: 5) {
+        print("FizzBuzz")
+    } else if i.isMultiple(of: 3) {
+        print("Fizz")
+    } else if i.isMultiple(of: 5) {
+        print("Buzz")
+    } else {
+        print(i)
+    }
+}
+
+for i in 1...100 {
+    if i.isMultiple(of: 3) {
+        if i.isMultiple(of: 5) {
+            print("FizzBuzz")
+        } else {
+            print ("Fizz")
+        }
+    } else if i.isMultiple(of: 5) {
+        print("Buzz")
+    } else {
+        print(i)
+    }
+}
